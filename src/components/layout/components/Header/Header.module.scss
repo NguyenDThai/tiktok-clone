@@ -102,7 +102,21 @@
     font-size: 2.2rem;
     padding: 4px 12px;
     cursor: pointer;
-    max-height: 28px;
+    display: flex;
+}
+.notiface-btn {
+    display: flex;
+    position: relative;
+}
+.notiface-num {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    padding: 0 4px;
 }
 .user-avatar {
     margin-left: 12px;

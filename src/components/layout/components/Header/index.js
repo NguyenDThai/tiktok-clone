@@ -4,6 +4,8 @@ import Menu from '~/components/Popper/Menu';
 import styles from './Header.module.scss';
 import { MessageIcon, NotifaceIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
+import Search from '../Search';
+import routesConfig from '~/config/routes';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -20,7 +22,7 @@ import { useEffect, useState } from 'react';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import classNames from 'classnames/bind';
-import Search from '../Search';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -82,7 +84,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={images.logo} alt="tiktok" />
+                <Link to={routesConfig.home} className={cx('logo-link')}>
+                    <img src={images.logo} alt="tiktok" />
+                </Link>
                 {/* Search */}
 
                 <Search />

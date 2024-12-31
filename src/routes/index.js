@@ -1,19 +1,19 @@
-import routesConfig from '~/config/routes';
+import config from '~/config';
 
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
 import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
-import { HeaderOnly } from '~/components/layout';
+import { HeaderOnly } from '~/layouts';
 
 // Khong can dang nhap
 const publicRoutes = [
-    { path: routesConfig.home, components: Home },
-    { path: routesConfig.following, components: Following },
-    { path: routesConfig.profile, components: Profile },
-    { path: routesConfig.search, components: Search },
-    { path: routesConfig.upload, components: Upload, layout: HeaderOnly },
+    { path: config.routes.home, components: Home },
+    { path: config.routes.following, components: Following },
+    { path: config.routes.profile, components: Profile },
+    { path: config.routes.search, components: Search },
+    { path: config.routes.upload, components: Upload, layout: HeaderOnly },
 ];
 const privateRoutes = [];
 

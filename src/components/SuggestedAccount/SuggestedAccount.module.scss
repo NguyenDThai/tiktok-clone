@@ -1,0 +1,41 @@
+.account-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color ease-in-out 200ms;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.body {
+    margin-left: 12px;
+}
+
+.nickname {
+    display: flex;
+    align-items: center;
+    line-height: 21px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.check {
+    margin-left: 6px;
+    color: rgb(32 213 236);
+}
+
+.fullname {
+    font-size: 1.2rem;
+    line-height: 15px;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.75);
+}

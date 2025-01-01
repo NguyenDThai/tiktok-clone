@@ -1,0 +1,42 @@
+.wrapper {
+    width: 320px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.btn {
+    padding: 6px 16px;
+}
+.body {
+    margin-top: 12px;
+}
+.nickname {
+    font-size: 1.6rem;
+}
+.check {
+    margin-left: 4px;
+    color: rgb(32 213 236);
+}
+.fullname {
+    font-size: 1.4rem;
+}
+.analyst {
+    display: flex;
+    margin-top: 8px;
+}
+.followers {
+    display: flex;
+}
+.likes {
+    display: flex;
+    margin-left: 6px;
+}

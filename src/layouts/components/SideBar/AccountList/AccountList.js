@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './AccountList.module.scss';
+import PropTypes from 'prop-types';
 
 import SuggestedAccount from '~/components/SuggestedAccount';
 
@@ -14,5 +15,9 @@ function AccountList({ title }) {
         </div>
     );
 }
+
+AccountList.propTypes = {
+    title: PropTypes.string,
+};
 
 export default AccountList;

@@ -2,6 +2,7 @@ import { useState, forwardRef } from 'react';
 import images from '~/assets/image';
 import classNames from 'classnames';
 import styles from './Image.module.scss';
+import PropTypes from 'prop-types';
 
 const Image = forwardRef(({ src, alt, className, fallBack: customFallback = images.noImage, ...props }, ref) => {
     const [fallback, setFallback] = useState('');
@@ -21,5 +22,12 @@ const Image = forwardRef(({ src, alt, className, fallBack: customFallback = imag
         />
     );
 });
+
+Image.propTypes = {
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string,
+    className: PropTypes.string,
+    fallBack: PropTypes.string,
+};
 
 export default Image;
